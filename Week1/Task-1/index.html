@@ -1,0 +1,146 @@
+<!-- Sayfanın temel yapısını oluşturmak için HTML5 doküman yapısı kullanıldı. -->
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Sayfa başlığı (<title>) ve karakter seti (<meta charset="UTF-8">) ayarlandı. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating First Web Page</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating First Web Page</title>
+        <!-- CSS kullanarak temel stiller uygulandı -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                color: #333;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+            }
+    
+            header, main, footer {
+                max-width: 800px;
+                margin: auto;
+                padding: 20px;
+            }
+    
+            header {
+                background-color: #e3f2fd;
+                text-align: center;
+                padding-bottom: 30px;
+                border-bottom: 2px solid #90caf9;
+            }
+    
+            header img {
+                border-radius: 50%;
+                margin-top: 10px;
+            }
+    
+            h1 {
+                color: #0d47a1;
+            }
+    
+            h2 {
+                color: #1976d2;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 5px;
+            }
+    
+            section {
+                margin-bottom: 30px;
+            }
+    
+            ul, ol {
+                padding-left: 20px;
+            }
+    
+            a {
+                color: #0d47a1;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+    
+            a:hover {
+                text-decoration: underline;
+            }
+    
+            iframe {
+                border: 1px solid #ccc;
+                margin-top: 10px;
+            }
+    
+            footer {
+                text-align: center;
+                font-size: 0.9em;
+                color: #777;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+    
+</head>
+
+<body>
+    <!-- Başlıklar ve paragraflar -->
+    <header>
+        <h1>Muhammet Tarık DUMANLI</h1>
+        <img src="images/unnamed.jpg" alt="Vesikalık Fotoğraf" width="100" height="100">
+        <p>Merhaba, ben Muhammet Tarık DUMANLI. 1996 yılında Ankara'da doğdum.</p>
+        <p>Gazi Üniversitesi Enerji Sistemleri Mühendisliği'nden 2019 yılında mezun oldum.</p>
+        <p>Şu an yazılım geliştirici olarak çalışmaktayım ve kariyerime bu alanda devam etmek istiyorum.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Eğitim</h2>
+            <h3>Gazi Üniversitesi - Enerji Sistemleri Mühendisliği (2014 - 2019)</h3>
+        </section>
+
+        <!-- Listeler kullanıldı -->
+        <div>
+            <h2>Deneyim</h2>
+            <ol>
+                <li>TCHEALTH Bilgi Teknolojileri A.Ş (2022 - Halen)</li>
+                <li>TrendyolExpress İş Ortaklığı (2021 - 2022)</li>
+                <li>Enerjisa Başkent Elektrik Dağıtım A.Ş. (Stajyer)</li>
+            </ol>
+        </div>
+
+        <section>
+            <h2>Yetenekler</h2>
+            <ul>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>MSSQL</li>
+            </ul>
+        </section>
+
+        <!-- Linkler eklendi -->
+        <div>
+            <h2>İletişim</h2>
+            <a href="https://tr.linkedin.com/in/muhammettarikdumanli">LinkedIn</a><br>
+            <a href="https://github.com/Muhammet-Tarik-Dumanli">Github</a>
+        </div>
+
+        <!-- iframe kullanıldı -->
+        <section>
+            <hr>
+            <iframe src="../Using Form Elements/formElements.html" width="400" height="400"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Muhammet Tarık DUMANLI</p>
+    </footer>
+</body>
+
+</html>
