@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Form Elements</title>
+    <style>
+        /* Sayfanın genel arka plan rengi ve yazı tipi */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Form kutusunun stili */
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Etiketlerin alt alta gelmesi için */
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Giriş alanları için basit stil */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Radio butonları yatayda sıralansın */
+        input[type="radio"] {
+            margin-top: 10px;
+        }
+
+        /* Gönder butonu */
+        input[type="submit"] {
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="README.md" method="get">
+
+        <!-- Kullanıcının adını ve soyadını girebileceği iki metin kutusu -->
+        <label for="firstName">Adınız:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="lastName">Soyadınız:</label>
+        <input type="text" id="lastName" name="lastName" required>
+<br>
+
+        <!-- Kullanıcının e-posta adresini girebileceği bir e-posta giriş alanı. -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+<br>
+
+        <!-- Kullanıcının parolasını girebileceği bir parola giriş alanı. -->
+        <label for="password">Parola:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+<br>
+
+        <!-- Kullanıcının cinsiyetini seçebileceği iki radyo düğmesi (Erkek ve Kadın). -->
+        <p>Cinsiyet:</p>
+        <label for="male">Erkek</label>
+        <input type="radio" id="male" name="gender" required>
+        <label for="female">Kadın</label>
+        <input type="radio" id="female" name="gender" required>
+<br>
+
+        <!-- Kullanıcının bir dizi seçenek arasından favori meyvesini seçebileceği bir açılır liste -->
+        <br>
+        <label for="fruits">Favori Meyveniz:</label>
+        <select name="fruits" id="fruits">
+            <option value="apple">Elma</option>
+            <option value="banana">Muz</option>
+            <option value="strawberry">Çilek</option>
+            <option value="watermelon">Karpuz</option>
+        </select>
+<br>
+
+        <!-- Kullanıcının bir mesaj yazabileceği bir metin alanı. -->
+        <label for="message">Forum hakkındaki düşünceleriniz:</label>
+        <textarea name="message" id="message" rows="3" cols="30"></textarea>
+<br>
+
+        <!-- Tüm bilgileri göndermek için bir "Gönder" düğmesi. -->
+         <br>
+        <input type="submit" id="submit" name="submit" value="Gönder">
+    </form>
+</body>
+
+</html>
