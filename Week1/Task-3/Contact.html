@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +13,30 @@
             margin: 0;
             padding: 0;
         }
-    
+
         nav {
             background-color: #333;
             padding: 10px;
             text-align: center;
         }
-    
+
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
-    
+
         nav a:hover {
             text-decoration: underline;
         }
-    
-        h2, p {
+
+        h2,
+        p {
             text-align: center;
             color: #333;
         }
-    
+
         ul {
             list-style: none;
             padding: 0;
@@ -43,30 +45,30 @@
             background-color: white;
             border-radius: 5px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-    
+
         ul li {
             margin-bottom: 10px;
             color: #555;
         }
-    
+
         form {
             max-width: 600px;
             margin: 20px auto;
             background-color: white;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-    
+
         label {
             display: block;
             margin-top: 10px;
             font-weight: bold;
             color: #333;
         }
-    
+
         input[type="text"],
         input[type="email"],
         textarea {
@@ -77,7 +79,7 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-    
+
         input[type="submit"] {
             margin-top: 15px;
             padding: 10px 20px;
@@ -87,13 +89,23 @@
             border-radius: 4px;
             cursor: pointer;
         }
-    
+
         input[type="submit"]:hover {
             background-color: #555;
         }
+
+        footer {
+            background-color: wheat;
+            color: black;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
     </style>
-    
+
 </head>
+
 <body>
     <nav>
         <a href="index.html">Ana Sayfa</a>
@@ -119,18 +131,25 @@
         <br>
         <label for="lastName">Soyadınız:</label>
         <input type="text" id="lastName" name="lastName" required>
-<br>
+        <br>
         <!-- Kullanıcının e-posta adresini girebileceği bir e-posta giriş alanı. -->
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
-<br>
+        <br>
         <!-- Kullanıcının bir mesaj yazabileceği bir metin alanı. -->
         <label for="message">Mesajınız:</label>
         <textarea name="message" id="message" rows="3" cols="30"></textarea>
-<br>
+        <br>
         <!-- Göndermek için bir "Gönder" düğmesi. -->
-         <br>
+        <br>
         <input type="submit" id="submit" name="submit" value="Gönder">
     </form>
+
+    <footer>
+        <p>&copy; 2025 Muhammet. Tüm hakları saklıdır.</p>
+        <p>Bu site eğitim amaçlı hazırlanmıştır.</p>
+    </footer>
+
 </body>
+
 </html>
