@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form For Practice</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This form for HTML and CSS practice</p>
+
+    <form action="#" method="post" id="survey-form">
+        <div>
+            
+            <label for="name" id="name-label">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+        </div>
+        <div>
+            <label for="email" id="email-label">Mail</label>
+            <input type="email" id="email" name="email" placeholder="Mail" required>
+        </div>
+        <div>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" name="number" min="18" max="42" placeholder="Age" required>
+        </div>
+        <div>
+            <select name="dropdown" id="dropdown" required>
+                <option value="Gender" selected disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div>
+            <p>Where did you here us?</p>
+            <br>
+            <label><input type="radio" name="radio-buttons" value="instagram">Instagram</label>
+            <label><input type="radio" name="radio-buttons" value="linkedIn">LinkedIn</label>
+            <label><input type="radio" name="radio-buttons" value="twitter">Twitter</label>
+        </div>
+        <div>
+            <input type="checkbox" name="termsOfService" id="termsOfService" value="accepted">Terms Of Service
+            <input type="checkbox" name="subscribeForNews" id="subscribeForNews" value="yes">Subscribe For News
+        </div>
+        <div>
+            <textarea name="message" id="message" rows="3" cols="30" placeholder="Suggestions"></textarea>
+        </div>
+        <div>
+            <input type="submit" id="submit" name="signUp" value="Sign Up">
+        </div>
+    </form>
+</body>
+
+</html>
