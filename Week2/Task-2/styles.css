@@ -76,6 +76,11 @@ section {
     padding: 20px;
 }
 
+a:visited,
+a:active {
+  color: inherit;
+}
+
 .blog-list>h2 {
     margin-bottom: 20px;
 }
