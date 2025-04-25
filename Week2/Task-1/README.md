@@ -28,4 +28,6 @@ Bu proje, HTML ve CSS kullanılarak oluşturulmuş basit bir blog sitesi örneğ
 
 ## Ekran Görüntüleri
 
+![index.html](image.png)
 
+![post.html](image-1.png)
