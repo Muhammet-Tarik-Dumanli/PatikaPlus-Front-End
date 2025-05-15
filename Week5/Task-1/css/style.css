@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #000000, #1c1c1c);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+img {
+  margin-top: 60px;
+  width: 220px;
+  filter: drop-shadow(0px 0px 8px #e98208);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.clock {
+  text-align: center;
+  font-size: 64px;
+  color: #e98208;
+  font-weight: bold;
+  margin-top: 30px;
+  text-shadow: 0 0 10px #e98208aa;
+  transition: all 0.3s ease;
+}
+
+.date {
+  text-align: center;
+  font-size: 28px;
+  color: #ffa94d;
+  margin-top: 15px;
+  text-shadow: 0 0 5px #e9820888;
+}
+
+.text1 {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 30px;
+  color: #e98208;
+  text-shadow: 0 0 8px #ff9900;
+}
+
+.text2 {
+  text-align: center;
+  font-size: 22px;
+  color: #ddd;
+  margin: 40px auto;
+  max-width: 800px;
+  text-shadow: 0 0 3px #000;
+  padding: 0 20px;
+}
