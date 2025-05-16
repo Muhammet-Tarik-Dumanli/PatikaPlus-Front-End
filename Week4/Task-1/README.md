@@ -17,8 +17,8 @@ Bu proje, modern bir **landing page (tanıtım sayfası)** tasarımıdır. Aray�
 
 ## 📸 Ekran Görüntüsü
 
-![Ekran Görüntüsü-1](./images/Screenshot_1.png0)
-![Ekran Görüntüsü-2](./images/Screenshot_2.png0)
+![Ekran Görüntüsü-1](./images/Screenshot_1.png)
+![Ekran Görüntüsü-2](./images/Screenshot_2.png)
 
 ## 🧾 Notlar
 Tüm görseller https://picsum.photos adresinden alınmıştır.
