@@ -1,10 +1,10 @@
 ## 📝 To Do List App
 
-    Bu proje, kullanıcıların görevlerini ekleyip, silebileceği ve tamamlanmış olarak işaretleyebileceği basit bir JavaScript tabanlı yapılacaklar listesi uygulamasıdır. Görevler localStorage kullanılarak kalıcı hale getirilmiştir, böylece sayfa yeniden yüklendiğinde görevler kaybolmaz.
+Bu proje, kullanıcıların görevlerini ekleyip, silebileceği ve tamamlanmış olarak işaretleyebileceği basit bir JavaScript tabanlı yapılacaklar listesi uygulamasıdır. Görevler localStorage kullanılarak kalıcı hale getirilmiştir, böylece sayfa yeniden yüklendiğinde görevler kaybolmaz.
 
 # 🚀 Özellikler
 
-    + Görev Ekleme: Kullanıcılar yeni görevler ekleyebilir.
++ Görev Ekleme: Kullanıcılar yeni görevler ekleyebilir.
 
     ❌ Görev Silme: Kullanıcılar görevleri listeden silebilir.
 
