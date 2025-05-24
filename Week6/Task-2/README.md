@@ -12,10 +12,19 @@ Bu proje, farklı Asya ülkelerine ait yemekleri listeleyen ve filtreleme ile ar
 
 ## 🖼️ Ekran Görüntüsü
 
+* Tüm Ürünler
 ![all](./images/all.png)
+
+* "China" filtrelemesi
 ![china](./images/china.png)
+
+* "Japan" filtrelemesi
 ![japan](./images/japan.png)
+
+* "Korea" filtrelemesi
 ![korea](./images/korea.png)
+
+* Searchbar ile "an" filtrelemesi
 ![searchbar](./images/searchbar.png)
 
 
