@@ -23,4 +23,4 @@ Bu proje, tuşlara basarak veya butonlara tıklayarak farklı davul seslerini ç
 
 ## Siteyi Ziyaret Ederek Deneyimleyebilirsiniz
 
- https://muhammet-tarik-dumanli.github.io/PatikaPlus-Front-End/Week5/Task-2
+ https://muhammet-tarik-dumanli.github.io/PatikaPlus-Front-End/Drum-Kit/
