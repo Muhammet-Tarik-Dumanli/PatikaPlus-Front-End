@@ -31,4 +31,11 @@ Kullanıcıya hem görsel hem işitsel eğlence sunar.
 
 Bu proje, JavaScript ile DOM işlemleri, API kullanımı ve basit animasyonları öğrenmek için güzel bir örnektir.
 
+## Deneyimlemek İsterseniz
+
+https://muhammet-tarik-dumanli.github.io/PatikaPlus-Front-End/Optional-Task/
+
+Linke tıklayarak siz de biraz gıdıklanabilirsiniz =)
+
 🎉 İyi eğlenceler!
+
