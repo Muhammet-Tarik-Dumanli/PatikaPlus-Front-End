@@ -75,5 +75,5 @@ p span {
 hr {
     opacity: 1;
     margin: 35px 0;
-    border-top-color: var(--background-color-1) ;
+    border-top-color: var(--border-color-1) ;
 }

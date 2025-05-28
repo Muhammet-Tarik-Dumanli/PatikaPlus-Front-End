@@ -10,4 +10,8 @@
       prevEl: ".swiper-button-prev",
     },
   });
+
+  var photos = GLightbox({
+    selector: "#photos .photo",
+  });
 })();
