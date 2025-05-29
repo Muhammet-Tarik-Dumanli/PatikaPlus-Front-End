@@ -75,5 +75,49 @@ p span {
 hr {
     opacity: 1;
     margin: 35px 0;
-    border-top-color: var(--border-color-1) ;
+    border-top-color: var(--border-color-1);
+}
+
+@media (max-width: 991.98px) {
+    .md-none-max-width {
+        max-width: 100% !important;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section .section-title h2 {
+        font-size: 55px;
+    }
+
+    .section .section-title h4 {
+        font-size: 24px;
+    }
+
+    .section .section-content {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .section .section-title {
+        margin-bottom: 20px;
+    }
+
+    .section .section-title h2 {
+        font-size: 30px;
+    }
+
+    .section .section-title h4 {
+        font-size: 18px;
+    }
+
+    .section .section-content {
+        padding: 30px;
+    }
 }

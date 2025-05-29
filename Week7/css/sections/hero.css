@@ -42,3 +42,27 @@
     letter-spacing: 1px;
     border-radius: var(--bs-border-radius-pill);
 }
+
+@media (max-width: 1399.98px) {
+    #hero h1 {
+        top: 200px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #hero {
+        height: 90vh;
+    }
+
+    #hero h1 {
+        top: 100px;
+    }
+
+    #hero .hero-bottom {
+        width: 100%;
+        left: 0;
+        bottom: 75px;
+        transform: none;
+        text-align: center;
+    }
+}
