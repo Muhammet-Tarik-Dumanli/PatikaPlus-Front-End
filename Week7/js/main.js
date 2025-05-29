@@ -1,6 +1,12 @@
 (function () {
   "use strict";
 
+  AOS.init({
+    startEvent: "load",
+    offset: 20,
+    once: true,
+  });
+
   var camera = new Swiper("#camera .swiper", {
     speed: 600,
     spaceBetween: 12,
@@ -67,7 +73,7 @@
 
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - header.offsetHeight,
+        top: section.offsetTop - 50,
         behavior: "smooth",
       });
     }
