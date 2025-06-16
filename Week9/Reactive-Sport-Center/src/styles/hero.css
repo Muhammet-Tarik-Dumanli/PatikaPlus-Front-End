@@ -1,0 +1,79 @@
+.hero-content {
+    margin: auto;
+    width: 60%;
+    padding-top: 100px;
+}
+
+.hero-content .label {
+    display: inline-block;
+    color: var(--light-text);
+    background-color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    color: var(--light-text);
+    font-size: 72px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
+    line-height: 7rem;
+}
+
+.hero-content p {
+    color: var(--light-text);
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 2px black;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.btn.primary {
+    padding: 8px 24px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--light-text);
+    font-size: 16px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.btn.primary:hover {
+    background-color: var(--primary-color);
+}
+
+.btn.secondary {
+    padding: 8px 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px var(--light-text);
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--light-text);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn.secondary:hover {
+    background-color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    
+    .btn.primary {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .btn.secondary {
+        display: block;
+        width: 100%;
+    }
+}

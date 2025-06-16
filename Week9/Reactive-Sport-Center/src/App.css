@@ -1,0 +1,11 @@
+@import 'index.css';
+@import './styles/header.css';
+@import './styles/footer.css';
+@import './styles/stats.css';
+@import './styles/hero.css';
+@import './styles/classes.css';
+@import './styles/bmi.css';
+@import './styles/trainers.css';
+@import './styles/purchase.css';
+@import './styles/review.css';
+@import './styles/contact.css';
