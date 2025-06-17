@@ -1,12 +1,21 @@
-# React + Vite
+# 🏋️‍♂️ Sport Center - React Version
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React.js ile geliştirilmiş, kullanıcı dostu ve duyarlı (responsive) bir spor merkezi web uygulamasıdır. Orijinal tasarım ve işlevsellik korunarak tüm bölümler component tabanlı olarak yeniden yazılmıştır.
 
-Currently, two official plugins are available:
+## 🎯 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Her section (Hero, Trainers, Purchase, Stats, Reviews, Contact vb.) ayrı bir React bileşeni
+- ✅ Her section içinde en az 3 alt bileşen kullanılarak modüler yapı oluşturuldu
+- ✅ Tamamen responsive (mobil ve masaüstü destekli)
+- ✅ Temiz kod yapısı ve kolay bakım imkanı
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Kullanılan Teknolojiler
+
+- React.js (Vite ile)
+- JSX
+- CSS (Bölümlere ayrılmış yapıda)
+- Bootstrap 5 (opsiyonel)
+- Netlify (deployment)
+
+
