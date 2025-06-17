@@ -55,5 +55,46 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+}
 
+.input {
+  margin: 10px auto;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  font-family: 'Indie Flower', cursive;
+  color: #393E46;
+  background-color: #EEEEEE;
+  border: 2px solid #4ECCA3;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #45b592;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: #EEEEEE;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 5px;
+}
+
+.restart-button {
+  margin: 20px 10px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+  color: #EEEEEE;
+  background-color: #232931;
+  border: 2px solid #4ECCA3;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #2a323d;
 }

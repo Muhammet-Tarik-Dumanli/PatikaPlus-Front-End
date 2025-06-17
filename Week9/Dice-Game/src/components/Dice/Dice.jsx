@@ -2,19 +2,32 @@ import { useState } from "react";
 import "../../styles/styles.css";
 
 function Dice() {
-    const [dice1, setDice1] = useState(1);
-    const [dice2, setDice2] = useState(1);
+    const [diceLeft, setDiceLeft] = useState(1);
+    const [diceRight, setDiceRight] = useState(1);
+    const [isRolling, setIsRolling] = useState(false);
 
     const rollDice = () => {
-        const randomNumber1 = Math.floor(Math.random() * 6) + 1;
-        const randomNumber2 = Math.floor(Math.random() * 6) + 1;
-        setDice1(randomNumber1);
-        setDice2(randomNumber2);
+        setIsRolling(true);
+        const interval = setInterval(() => {
+            setDiceLeft(Math.floor(Math.random() * 6) + 1);
+            setDiceRight(Math.floor(Math.random() * 6) + 1);
+        }, 100);
+
+        setTimeout(() => {
+            clearInterval(interval);
+            const randomNumber1 = Math.floor(Math.random() * 6) + 1;
+            const randomNumber2 = Math.floor(Math.random() * 6) + 1;
+            setDiceLeft(randomNumber1);
+            setDiceRight(randomNumber2);
+            setIsRolling(false);
+        }, 3000)
+
     };
 
     const getWinnerMessage = () => {
-        if (dice1 > dice2) return '🚩 Player 1 Wins!';
-        if (dice2 > dice1) return 'Player 2 Wins! 🚩';
+        if(isRolling) return 'Rolling...'
+        if (diceLeft > diceRight) return '🚩 Player 1 Wins!';
+        if (diceRight > diceLeft) return 'Player 2 Wins! 🚩';
         return 'Draw!';
     };
     return (
@@ -23,15 +36,15 @@ function Dice() {
                 <h1 className="winner">{getWinnerMessage()}</h1>
                 <div className="dice">
                     <p>Player 1</p>
-                    <img src={`./src/assets/images/dice${dice1}.png`} alt="leff-dice" className="img1" />
+                    <img src={`./src/assets/images/dice${diceLeft}.png`} alt="leff-dice" className="img1" />
                 </div>
 
                 <div className="dice">
                     <p>Player 2</p>
-                    <img src={`./src/assets/images/dice${dice2}.png`} alt="right-dice" className="img2" />
+                    <img src={`./src/assets/images/dice${diceRight}.png`} alt="right-dice" className="img2" />
                 </div>
             </div>
-            <button className="button" onClick={rollDice}>Refresh</button>
+            <button className="button" onClick={rollDice} disabled={isRolling}>{isRolling ? 'Rolling...' : 'Roll Dice'}</button>
             <footer>Muhammet 🎲 Tarık 🎲 DUMANLI</footer>
         </>
     )
