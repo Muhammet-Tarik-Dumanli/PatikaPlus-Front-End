@@ -41,6 +41,6 @@
 
 ## 📸 Ekran Görüntüsü
 
-> `![Dicee Screenshot](./src/assets/images/screen.png)`
+ ![Dicee Screenshot](./src/assets/images/screen.png)
 
 ---
