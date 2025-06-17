@@ -5,6 +5,7 @@ function Dice() {
     const [diceLeft, setDiceLeft] = useState(1);
     const [diceRight, setDiceRight] = useState(1);
     const [isRolling, setIsRolling] = useState(false);
+    const [player1Name, setPlayer1Name] = useState('Player 1');
 
     const rollDice = () => {
         setIsRolling(true);
@@ -30,12 +31,16 @@ function Dice() {
         if (diceRight > diceLeft) return 'Player 2 Wins! 🚩';
         return 'Draw!';
     };
+
+    const handleNameChange = (e) => {
+        setPlayer1Name(e.target.value || 'Player 1');
+    }
     return (
         <>
             <div className="container">
                 <h1 className="winner">{getWinnerMessage()}</h1>
                 <div className="dice">
-                    <p>Player 1</p>
+                    <p><input type="text" className="input" value={player1Name} onChange={handleNameChange} placeholder="Player 1" disabled={isRolling}/></p>
                     <img src={`./src/assets/images/dice${diceLeft}.png`} alt="leff-dice" className="img1" />
                 </div>
 
