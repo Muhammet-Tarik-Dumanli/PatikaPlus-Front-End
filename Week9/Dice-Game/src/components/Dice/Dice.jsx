@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../../styles/styles.css";
 
 function Dice() {
+    // State for dice values, rolling status, player name, and scores
     const [diceLeft, setDiceLeft] = useState(1);
     const [diceRight, setDiceRight] = useState(1);
     const [isRolling, setIsRolling] = useState(false);
@@ -9,6 +10,7 @@ function Dice() {
     const [player1Score, setPlayer1Score] = useState(0);
     const [player2Score, setPlayer2Score] = useState(0);
 
+    // Handles dice rolling with a 3-second animation
     const rollDice = () => {
         setIsRolling(true);
         const interval = setInterval(() => {
@@ -23,7 +25,7 @@ function Dice() {
             setDiceLeft(randomNumber1);
             setDiceRight(randomNumber2);
             setIsRolling(false);
-
+            // Update scores based on dice results
             if (randomNumber1 > randomNumber2) {
                 setPlayer1Score(prev => prev + 1);
             } else if (randomNumber2 > randomNumber1) {
@@ -33,6 +35,7 @@ function Dice() {
 
     };
 
+    // Determines the winner message based on dice values
     const getWinnerMessage = () => {
         if (isRolling) return 'Rolling...'
         if (diceLeft > diceRight) return '🚩 Player 1 Wins!';
@@ -40,10 +43,12 @@ function Dice() {
         return 'Draw!';
     };
 
+    // Handles changes to Player 1's name
     const handleNameChange = (e) => {
         setPlayer1Name(e.target.value || 'Player 1');
     }
 
+    // Resets the game to initial state
     const resetGame = () => {
         setDiceLeft(1);
         setDiceRight(1);

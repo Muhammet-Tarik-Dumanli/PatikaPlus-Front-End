@@ -1,12 +1,46 @@
-# React + Vite
+# 🎲 Dicee - React Zar Oyunu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dicee**, klasik iki oyunculu zar oyununun modern bir versiyonudur. React ve Vite ile geliştirilmiştir. Oyuncular sırayla zar atar, skorlar tutulur ve bir kazanan belirlenir. Modern tasarımı ve animasyonlu yapısıyla eğlenceli bir oyun deneyimi sunar.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Özellikler
 
-## Expanding the ESLint configuration
+- 🎮 **İki Oyunculu Oyun**  
+  Player 1 ve Player 2 için her turda rastgele 1 ile 6 arasında zar atılır.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎲 **Zar Animasyonu**  
+  Zar atıldığında 3 saniyelik bir animasyon ile zar yüzleri hızlıca değişerek gerçek bir zar hissi verir.
+
+- 🏆 **Skor Takibi**  
+  Her turun kazananı 1 puan kazanır. Beraberlik durumunda skorlar değişmez.
+
+- ✏️ **Kullanıcı Adı Özelleştirme**  
+  Player 1, kendi adını bir giriş alanı ile güncelleyebilir.
+
+- 🔄 **Restart Butonu**  
+  Oyunu sıfırlamak için bir buton bulunur. Bu buton, skorları ve kullanıcı adını dahil olmak üzere tüm durumu sıfırlar.
+
+---
+
+## 🎨 Tasarım
+
+- Oyun, klasik **Dicee** görünümünü koruyarak modern bir yaklaşımla yeniden tasarlandı.
+- Google Fonts ve özel CSS ile estetik bir kullanıcı arayüzü sunar.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **React** – Bileşen tabanlı kullanıcı arayüzü
+- **Vite** – Hızlı geliştirme ortamı
+- **CSS** – Özel stiller ve animasyonlar
+- **Google Fonts** – Tipografi desteği
+
+---
+
+## 📸 Ekran Görüntüsü
+
+> `![Dicee Screenshot](./src/assets/images/screen.png)`
+
+---
