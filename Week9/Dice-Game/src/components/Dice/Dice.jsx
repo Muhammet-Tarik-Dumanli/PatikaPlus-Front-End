@@ -43,6 +43,16 @@ function Dice() {
     const handleNameChange = (e) => {
         setPlayer1Name(e.target.value || 'Player 1');
     }
+
+    const resetGame = () => {
+        setDiceLeft(1);
+        setDiceRight(1);
+        setPlayer1Name('Player 1');
+        setPlayer1Score(0);
+        setPlayer2Score(0);
+        setIsRolling(false);
+    }
+
     return (
         <>
             <div className="container">
@@ -60,6 +70,7 @@ function Dice() {
                 </div>
             </div>
             <button className="button" onClick={rollDice} disabled={isRolling}>{isRolling ? 'Rolling...' : 'Roll Dice'}</button>
+            <button className="button" onClick={resetGame} disabled={isRolling}>Restart Game</button>
             <footer>Muhammet 🎲 Tarık 🎲 DUMANLI</footer>
         </>
     )
