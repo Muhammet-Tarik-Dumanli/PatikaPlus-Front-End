@@ -11,6 +11,27 @@ function App() {
   const [balance, setBalance] = useState(INTIAL_BALANCE);
   const [purchased, setPurchased] = useState({});
 
+
+  // Spawn dollar elements from random horizontal positions
+  const triggerDollarRain = (count = 10) => {
+    for (let i = 0; i < count; i++) {
+      const dollar = document.createElement("div");
+      dollar.className = "dollar";
+
+      const left = Math.random() * 100;
+      dollar.style.left = `${left}vw`;
+
+      dollar.textContent = Math.random() < 0.2 ? "💸" : "$";
+
+      document.body.appendChild(dollar);
+
+      setTimeout(() => {
+        dollar.remove();
+      }, 2000);
+    }
+  };
+
+
   //Handle buying a product
   const handleBuy = (product, count = 1) => {
     const total = product.price * count;
@@ -26,6 +47,8 @@ function App() {
           quantity: (prev[product.id]?.quantity || 0) + count
         }
       }));
+
+      triggerDollarRain(Math.min(count, 30));
     }
   };
 

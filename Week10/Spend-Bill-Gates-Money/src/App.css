@@ -111,3 +111,22 @@ button.sell {
   padding: 0.5rem 0;
   border-bottom: 1px solid #eee;
 }
+
+.dollar {
+  position: fixed;
+  top: -40px;
+  left: 0;
+  font-size: 2rem;
+  animation: fall 2s linear forwards;
+  pointer-events: none;
+  z-index: 9999;
+  color: green;
+  user-select: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
