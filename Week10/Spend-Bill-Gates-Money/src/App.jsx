@@ -1,4 +1,4 @@
-import ProdductList from './components/ProductList';
+import ProductList from './components/ProductList';
 import { products } from './data/products';
 import { useState } from 'react';
 import './App.css'
@@ -12,17 +12,42 @@ function App() {
 
   //Handle buying a product
   const handleBuy = (product) => {
+    if (balance >= product.price) {
+      setBalance(balance - product.price);
 
+      //Update purchased state
+      setPurchased((prev) => ({
+        ...prev,
+        [product.id]: {
+          ...product,
+          quantity: (prev[product.id]?.quantity || 0) + 1
+        }
+      }));
+    }
   };
 
   //Handle selling a product
   const handleSell = (product) => {
+    const existing = purchased[product.id];
+    if (existing && existing.quantity > 0) {
+      setBalance(balance + product.price);
 
+      //Update purchased state
+      setPurchased((prev) => ({
+        ...prev,
+        [product.id]: {
+          ...product,
+          quantity: existing.quantity - 1
+        }
+      }));
+    }
   };
 
   return (
     <>
-      <ProdductList
+    <h1>Spend Bill Gates' Money</h1>
+    <h2>Balance: ${balance.toLocaleString()}</h2>
+      <ProductList
         products={products}
         balance={balance}
         purchased={purchased}
