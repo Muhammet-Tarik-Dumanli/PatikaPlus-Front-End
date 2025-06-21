@@ -4,7 +4,7 @@ Bu proje, basit bir not alma uygulamasıdır. Kullanıcılar not yazabilir, renk
 
 ## 📸 Ekran Görüntüsü
 
-[notes-app](./public/notes-app.png)
+![notes-app](./public/notes-app.png)
 
 ## 🚀 Özellikler
 
