@@ -1,0 +1,137 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  resize: none;
+  min-height: 80px;
+  transition: border 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.color-picker {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.color-circle.selected {
+  border-color: #333;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #43a047;
+}
+
+.note-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  border-radius: 12px;
+  color: #333;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease;
+}
+
+.note:hover {
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #c0392b;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
