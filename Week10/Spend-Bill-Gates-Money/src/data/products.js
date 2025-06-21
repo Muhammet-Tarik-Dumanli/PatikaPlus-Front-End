@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         id: "1",
         title: "Big Mac",
@@ -315,5 +315,3 @@ const products = [
         count: 0
     }
 ]
-
-export default products
