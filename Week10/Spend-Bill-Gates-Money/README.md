@@ -18,12 +18,6 @@ This is a fun React clone of the viral website [neal.fun/spend](https://neal.fun
 
 ---
 
-## 🖼️ Live Demo 
-
-
-
----
-
 ## 🧪 Tech Stack
 
 - ⚛️ React (with Vite)
