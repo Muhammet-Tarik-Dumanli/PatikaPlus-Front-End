@@ -12,33 +12,37 @@ function App() {
   const [purchased, setPurchased] = useState({});
 
   //Handle buying a product
-  const handleBuy = (product) => {
-    if (balance >= product.price) {
-      setBalance(balance - product.price);
+  const handleBuy = (product, count = 1) => {
+    const total = product.price * count;
+
+    if (balance >= total) {
+      setBalance((prev) => Number(prev) - total);
 
       //Update purchased state
       setPurchased((prev) => ({
         ...prev,
         [product.id]: {
           ...product,
-          quantity: (prev[product.id]?.quantity || 0) + 1
+          quantity: (prev[product.id]?.quantity || 0) + count
         }
       }));
     }
   };
 
   //Handle selling a product
-  const handleSell = (product) => {
+  const handleSell = (product, count = 1) => {
     const existing = purchased[product.id];
     if (existing && existing.quantity > 0) {
-      setBalance(balance + product.price);
+      const actualCount = Math.min(count, existing.quantity)
+
+      setBalance((prev) => Number(prev) + product.price * actualCount);
 
       //Update purchased state
       setPurchased((prev) => ({
         ...prev,
         [product.id]: {
           ...product,
-          quantity: existing.quantity - 1
+          quantity: existing.quantity - actualCount
         }
       }));
     }
