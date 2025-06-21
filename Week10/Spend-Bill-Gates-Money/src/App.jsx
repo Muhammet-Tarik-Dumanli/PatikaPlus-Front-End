@@ -2,6 +2,7 @@ import ProductList from './components/ProductList';
 import { products } from './data/products';
 import { useState } from 'react';
 import './App.css'
+import PurchasedList from './components/PurchasedList';
 
 function App() {
 
@@ -44,9 +45,9 @@ function App() {
   };
 
   return (
-    <>
-    <h1>Spend Bill Gates' Money</h1>
-    <h2>Balance: ${balance.toLocaleString()}</h2>
+    <div className='container'>
+      <h1>Spend Bill Gates' Money</h1>
+      <h2>Balance: ${balance.toLocaleString()}</h2>
       <ProductList
         products={products}
         balance={balance}
@@ -54,7 +55,9 @@ function App() {
         onBuy={handleBuy}
         onSell={handleSell}
       />
-    </>
+
+      <PurchasedList purchased={purchased} />
+    </div>
   )
 }
 

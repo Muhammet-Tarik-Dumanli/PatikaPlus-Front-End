@@ -11,9 +11,9 @@ const ProductCard = ({ product, balance, quantity, onBuy, onSell }) => {
             <p>${product.price.toLocaleString()}</p>
 
             <div className="buttons">
-                <button onClick={() => onSell(product)} disabled={!canSell}>Sell</button>
+                <button className="sell" onClick={() => onSell(product)} disabled={!canSell}>Sell</button>
                 <span>{quantity}</span>
-                <button onClick={() => onBuy(product)} disabled={!canBuy}>Buy</button>
+                <button className="buy" onClick={() => onBuy(product)} disabled={!canBuy}>Buy</button>
             </div>
         </div>
     );
