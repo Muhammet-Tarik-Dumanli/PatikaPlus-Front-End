@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 2px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-area {
+  margin-top: 15px;
+}
+
+.question-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.question-area {
+  margin: 20px 0;
+  height: 60px;
+}
+
+.question {
+  font-size: 22px;
+  border-bottom: 3px solid #ddd;
+  margin: 0px 5px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.question:hover {
+  background: #F44336;
+  color: white;
+  border-bottom: 3px solid #F44336;
+}
+
+.empty-message {
+  font-size: 25px;
+}
