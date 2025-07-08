@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import './App.css'
+import ToDoList from './components/ToDoList';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -14,10 +15,23 @@ function App() {
     }
   }
 
+  const toggleToDo = (index) => {
+    const newToDos = [...todos];
+    newToDos[index].done = !newToDos[index].done;
+    setTodos(newToDos);
+  }
+
+  const deleteToDo = (index) => {
+    const newToDos = todos.filter((_, i) => i !== index);
+    setTodos(newToDos);
+  }
+
   return (
     <section className='todoapp'>
-      <Header addToDo={addToDo}/>
-      <pre>{JSON.stringify(todos, null, 2)}</pre>
+      <Header addToDo={addToDo} />
+      {todos.length > 0 && (
+        <ToDoList todos={todos} toggleToDo={toggleToDo} deleteToDo={deleteToDo} />
+      )}
     </section>
   )
 }
