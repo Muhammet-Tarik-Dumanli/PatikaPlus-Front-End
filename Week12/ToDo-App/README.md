@@ -31,6 +31,7 @@ Bu proje, klasik bir **Todo** uygulamasının React kullanılarak yeniden inşa 
 
 ## 🗃️ Proje Yapısı
 
+```bash
 ToDo-App/
 ├── public/
 ├── src/
@@ -44,7 +45,7 @@ ToDo-App/
 ├── index.html
 ├── package.json
 └── README.md
-
+```
 
 ## 🧑‍💻 Kurulum ve Çalıştırma
 
