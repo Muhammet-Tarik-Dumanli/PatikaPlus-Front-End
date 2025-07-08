@@ -2,9 +2,11 @@ import { useState } from 'react'
 import Header from './components/Header'
 import './App.css'
 import ToDoList from './components/ToDoList';
+import Footer from './components/Footer';
 
 function App() {
   const [todos, setTodos] = useState([]);
+  const [filter, setFilter] = useState('all');
 
   const addToDo = (text) => {
     const trimmed = text.trim();
@@ -26,11 +28,25 @@ function App() {
     setTodos(newToDos);
   }
 
+  const clearCompleted = () => {
+    const newToDos = todos.filter((todo) => !todo.done);
+    setTodos(newToDos);
+  }
+
+  const filteredToDos = todos.filter((todo) => {
+    if (filter === 'active') return !todo.done;
+    if (filter === 'completed') return todo.done;
+    return true;
+  })
+
   return (
     <section className='todoapp'>
       <Header addToDo={addToDo} />
       {todos.length > 0 && (
-        <ToDoList todos={todos} toggleToDo={toggleToDo} deleteToDo={deleteToDo} />
+        <>
+          <ToDoList todos={filteredToDos} toggleToDo={toggleToDo} deleteToDo={deleteToDo} />
+          <Footer todos={todos} setFilter={setFilter} clearCompleted={clearCompleted} currentFilter={filter} />
+        </>
       )}
     </section>
   )
