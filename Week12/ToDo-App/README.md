@@ -1,12 +1,64 @@
-# React + Vite
+# 📝 React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, klasik bir **Todo** uygulamasının React kullanılarak yeniden inşa edilmiş halidir. Kullanıcılar yeni görevler ekleyebilir, görevleri tamamlanmış olarak işaretleyebilir, tamamlanan görevleri temizleyebilir ve görevlerini filtreleyerek listeleyebilir. Ayrıca görevler tarayıcı kapatılsa bile **localStorage** sayesinde kaybolmaz.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Özellikler
 
-## Expanding the ESLint configuration
+- ✅ Görev ekleme
+- ✅ Görev tamamlama ve geri alma
+- ✅ Tekli görev silme
+- ✅ Tüm görevleri tamamlama (toggle-all)
+- ✅ Aktif / Tamamlanmış / Tümü filtreleme
+- ✅ Tamamlanan görevleri temizleme
+- ✅ localStorage ile veri kalıcılığı
+- 💻 Responsive ve sade arayüz
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Açıklama |
+|----------|----------|
+| React    | Arayüzü oluşturmak için |
+| Vite     | Hızlı geliştirme ortamı sağlamak için |
+| HTML/CSS | Görsel yapı ve stillendirme |
+| JavaScript | Uygulama mantığı |
+| localStorage | Verilerin kalıcı tutulması için |
+
+---
+
+## 🗃️ Proje Yapısı
+
+ToDo-App/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── TodoItem.jsx
+│   │   ├── TodoList.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   └── index.css
+├── index.html
+├── package.json
+└── README.md
+
+
+## 🧑‍💻 Kurulum ve Çalıştırma
+
+Projeyi kendi bilgisayarınızda çalıştırmak için şu adımları izleyin:
+
+```bash
+# 1. Projeyi klonlayın
+git clone https://github.com/kullanici-adiniz/react-todo-app.git
+
+# 2. Klasöre girin
+cd react-todo-app
+
+# 3. Bağımlılıkları yükleyin
+npm install
+
+# 4. Geliştirme sunucusunu başlatın
+npm run dev
