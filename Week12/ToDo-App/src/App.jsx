@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import './App.css'
 import ToDoList from './components/ToDoList';
@@ -7,6 +7,17 @@ import Footer from './components/Footer';
 function App() {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState('all');
+
+  useEffect(() => {
+    const storedTodos = JSON.parse(localStorage.getItem('todos'));
+    if (storedTodos) {
+      setTodos(storedTodos);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   const addToDo = (text) => {
     const trimmed = text.trim();
@@ -39,12 +50,17 @@ function App() {
     return true;
   })
 
+  const toggleAll = () => {
+    const allDone = todos.every((todo) => todo.done);
+    setTodos(todos.map((todo) => ({ ...todo, done: !allDone })))
+  }
+
   return (
     <section className='todoapp'>
       <Header addToDo={addToDo} />
       {todos.length > 0 && (
         <>
-          <ToDoList todos={filteredToDos} toggleToDo={toggleToDo} deleteToDo={deleteToDo} />
+          <ToDoList todos={filteredToDos} toggleToDo={toggleToDo} deleteToDo={deleteToDo} toggleAll={toggleAll} />
           <Footer todos={todos} setFilter={setFilter} clearCompleted={clearCompleted} currentFilter={filter} />
         </>
       )}
