@@ -24,19 +24,19 @@ function Home() {
     };
 
     return (
-        <div>
+        <div className="container">
             <h1>Star Wars Ships</h1>
             <SearchBar setStarships={setStarships} resetPage={resetPage} />
-            <div>
+            <div className="starship-grid">
                 {Array.isArray(starships) && starships.map((ship) => (
                     <Link key={ship.uid} to={`/starship/${ship.uid}`}>
-                        <div>
+                        <div className="starship-card">
                             <h3>{ship.name}</h3>
                         </div>
                     </Link>
                 ))}
             </div>
-            <button onClick={() => setPage(prev => prev + 1)}>More...</button>
+            <button onClick={() => setPage(prev => prev + 1)} style={{ marginTop: "2rem" }}>Load More...</button>
         </div>
     )
 }

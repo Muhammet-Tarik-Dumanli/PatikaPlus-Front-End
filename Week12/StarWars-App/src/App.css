@@ -1,0 +1,81 @@
+/* app.css */
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #58a6ff;
+}
+
+.starship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.starship-card {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.starship-card:hover {
+  transform: translateY(-5px);
+  background-color: #1f2733;
+}
+
+.starship-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.starship-card p {
+  font-size: 0.95rem;
+  color: #c9d1d9;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  width: 250px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #238636;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
+
+.detail-container {
+  background-color: #161b22;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.detail-container p {
+  margin-bottom: 0.8rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #58a6ff;
+}

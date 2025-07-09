@@ -19,7 +19,7 @@ function StarshipDetail() {
   if (!starship) return <p>Loading...</p>
 
   return (
-    <div>
+    <div className="detail-container">
       <h2>{starship.name}</h2>
       <p><strong>Model:</strong> {starship.model}</p>
       <p><strong>Starship Class:</strong> {starship.starship_class}</p>
@@ -32,7 +32,7 @@ function StarshipDetail() {
       <p><strong>Cargo Capacity:</strong> {starship.cargo_capacity}</p>
       <p><strong>Hyperdrive Rating:</strong> {starship.hyperdrive_rating}</p>
 
-      <Link to="/">🔙 Go Home</Link>
+      <Link className="back-link" to="/">🔙 Go Home</Link>
     </div>
   )
 }
