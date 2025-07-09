@@ -5,3 +5,10 @@ export const fetchStarships = async (page = 1) => {
   const data = await res.json();
   return data;
 };
+
+
+export const fetchStarshipById = async (id) => {
+  const res = await fetch(`${BASE_URL}/starships/${id}`);
+  const data = await res.json();
+  return data;
+};
